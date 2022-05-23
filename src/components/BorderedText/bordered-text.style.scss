@@ -1,0 +1,63 @@
+.c-bordered-text {
+  @apply xl:min-h-[60vh] flex flex-col items-center justify-center my-20 xl:my-40;
+
+  &__inner {
+    @apply text-center mx-auto relative px-4 sm:px-16 py-16 sm:py-20 lg:px-40 xl:px-60 pointer-events-none;
+
+    &:before,
+    &:after {
+      @apply content-[''] border border-primary absolute;
+    }
+
+    &:before {
+      @apply inset-x-14 inset-y-6;
+    }
+
+    &:after {
+      @apply inset-x-10 sm:inset-x-20 inset-y-0;
+    }
+  }
+
+  &__textbox {
+    @apply px-10 sm:px-16 lg:px-0 lg:w-[700px] mx-auto pointer-events-auto;
+  }
+
+  &__copy {
+    @apply text-sm md:text-[1rem] pt-6 pb-6 leading-loose;
+  }
+
+  .o-header-icon {
+    @apply max-w-[500px] mx-auto;
+  }
+
+  .o-custom-button {
+    @apply max-w-[180px] mx-auto;
+  }
+
+  // ANIMATIONS
+  .animate__animated {
+    .c-bordered-text__inner {
+      &:before,
+      &:after {
+        @apply duration-500 transition-all;
+      }
+      &:before {
+        @apply inset-x-20;
+      }
+      &:after {
+        @apply inset-y-6;
+      }
+    }
+
+    &.active {
+      .c-bordered-text__inner {
+        &:before {
+          @apply inset-x-4 sm:inset-x-14;
+        }
+        &:after {
+          @apply inset-y-0;
+        }
+      }
+    }
+  }
+}

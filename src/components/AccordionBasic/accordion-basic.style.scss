@@ -1,0 +1,15 @@
+.c-accordion-basic {
+  @apply py-14 md:pt-32 px-4;
+
+  .c-accordion {
+    @apply max-w-6xl py-16 md:pt-28 mx-auto px-0 sm:px-4;
+
+    &__title {
+      @apply text-left normal-case pl-0;
+    }
+
+    &__textbox {
+      @apply px-1;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.c-tiles {
+  @apply bg-grayscaleMediumLighter text-center;
+
+  &__textbox {
+    @apply flex justify-center items-center flex-col h-full w-9/12 m-auto py-20;
+  }
+
+  &__paragraph {
+    @apply text-sm sm:text-[1rem] leading-loose py-8 max-w-sm;
+  }
+
+  .c-whole-image {
+    @apply h-full;
+
+    .animate__animated {
+      @apply h-full;
+
+      img {
+        @apply h-full;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.o-custom-input {
+  @apply bg-transparent py-3 px-3 sm:px-4 text-sm;
+
+  &:focus {
+    @apply outline-none;
+  }
+
+  &::placeholder {
+    @apply text-[#ffffff90];
+  }
+
+  &--primary {
+    @apply border-grayscaleExtraLight border;
+  }
+
+  &--secondary {
+    @apply bg-grayscaleExtraLight;
+  }
+}
+
+select.o-custom-input {
+  @apply pb-[0.65rem];
+}
+
+textarea.o-custom-input {
+  @apply min-h-[12rem];
+}

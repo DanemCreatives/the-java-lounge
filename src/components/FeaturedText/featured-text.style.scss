@@ -1,0 +1,11 @@
+.c-featured-text {
+  @apply py-20 sm:py-40 md:py-60 lg:h-screen flex items-center justify-center mx-auto px-3 md:px-6;
+
+  &__textbox {
+    @apply text-center z-10 max-w-4xl;
+  }
+
+  &__copy {
+    @apply pt-16 w-4/5 m-auto text-sm leading-loose md:text-lg md:leading-loose;
+  }
+}

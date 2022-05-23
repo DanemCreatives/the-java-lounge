@@ -1,0 +1,20 @@
+.c-hero {
+  @apply h-screen min-h-[650px] overflow-hidden relative;
+
+  &__background {
+    @apply absolute inset-0 opacity-75;
+  }
+
+  &__textbox {
+    @apply absolute inset-0 flex items-center justify-center container mx-auto;
+  }
+
+  &__header {
+    text-shadow: 7px 7px 7px #00000070;
+    @apply font-secondary font-extrabold text-center uppercase px-3 sm:px-6 md:leading-tight text-3xl sm:text-4xl md:text-5xl xl:text-7xl xl:leading-snug;
+
+    span {
+      @apply font-extralight italic;
+    }
+  }
+}

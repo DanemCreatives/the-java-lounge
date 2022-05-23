@@ -1,0 +1,24 @@
+.o-link-underline {
+  @apply relative text-sm uppercase transition-all duration-500;
+
+  &:before,
+  &:after {
+    @apply content-[''] h-[1px] w-0 absolute -bottom-1.5 transition-all duration-500 ease-out;
+    @apply bg-white;
+  }
+
+  &:before {
+    @apply right-1/2;
+  }
+
+  &:after {
+    @apply left-1/2;
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      @apply w-1/2;
+    }
+  }
+}

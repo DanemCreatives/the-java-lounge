@@ -1,0 +1,38 @@
+.o-header-dotted-lines {
+  @apply font-secondary font-extrabold leading-snug relative uppercase text-center my-8 text-4xl md:text-5xl xl:text-6xl;
+
+  &:before,
+  &:after {
+    @apply content-[''] absolute border-dotted h-1 inset-x-1/3 border-primary;
+  }
+
+  &:before {
+    @apply -top-8 border-t-2;
+  }
+
+  &:after {
+    @apply -bottom-8 border-b-2;
+  }
+
+  span {
+    @apply font-medium italic;
+  }
+
+  // ANIMATIONS
+  .animate__animated & {
+    @apply transform opacity-0 transition duration-1000;
+    &:before,
+    &:after {
+      @apply inset-x-1/2 transition-all duration-1000;
+    }
+  }
+
+  .animate__animated.active & {
+    @apply opacity-100 scale-100;
+
+    &:before,
+    &:after {
+      @apply inset-x-1/3;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.page {
+  &:not(.home-page, .brew-guide) {
+    @apply pt-[4.9rem] sm:pt-[5.1rem] md:pt-[5.9rem];
+  }
+
+  &.brew-guide {
+    @apply pt-[4.9rem] lg:pt-0;
+
+    .c-featured-banner {
+      @apply block lg:hidden;
+    }
+
+    .c-accordion-with-imagery__accordion {
+      @apply lg:pt-[5.9rem];
+    }
+  }
+}

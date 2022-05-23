@@ -1,0 +1,44 @@
+.c-whole-image {
+  img {
+    @apply object-cover w-full;
+  }
+
+  span {
+    @apply pointer-events-none;
+
+    &:before,
+    &:after {
+      @apply content-[''] absolute border-primary;
+    }
+
+    &:first-child {
+      &:before,
+      &:after {
+        @apply border-t border-r;
+      }
+
+      &:before {
+        @apply -top-2 -right-2 h-10 w-10;
+      }
+
+      &:after {
+        @apply -top-4 -right-4 h-20 w-20;
+      }
+    }
+
+    &:last-child {
+      &:before,
+      &:after {
+        @apply border-b border-l;
+      }
+
+      &:before {
+        @apply -bottom-2 -left-2 h-10 w-10;
+      }
+
+      &:after {
+        @apply -bottom-4 -left-4 h-20 w-20;
+      }
+    }
+  }
+}

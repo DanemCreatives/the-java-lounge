@@ -1,0 +1,49 @@
+.c-accordion-with-imagery {
+  &__textbox {
+    @apply absolute inset-0 z-10 flex items-center justify-center text-center max-w-[200px] mx-auto pt-[4.9rem] lg:pt-[5.8rem];
+    animation: swipeUpFade 1s;
+  }
+
+  &__canvas {
+    @apply sticky top-0 flex items-center justify-center bg-black;
+  }
+
+  &__image-container {
+    @apply lg:h-screen w-full opacity-75;
+    animation: customFadeInSubtle 1s;
+  }
+
+  &__img {
+    @apply w-full h-full object-cover absolute opacity-0 transition duration-[1500ms] delay-100;
+
+    &.active {
+      @apply opacity-100 delay-[0ms];
+    }
+  }
+
+  &__col-left {
+    @apply hidden lg:block;
+  }
+
+  &__col-right {
+    @apply flex items-center;
+  }
+
+  &__accordion {
+    @apply w-full;
+  }
+
+  .o-header-drop-shadow {
+    @apply absolute overflow-hidden;
+
+    span {
+      @apply transform translate-y-full block duration-1000 opacity-0;
+    }
+
+    &.active {
+      span {
+        @apply translate-y-0 opacity-100 delay-300;
+      }
+    }
+  }
+}

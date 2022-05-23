@@ -1,0 +1,7 @@
+.o-link-icon {
+  @apply flex items-center py-4;
+
+  &__text {
+    @apply pl-4 uppercase text-sm;
+  }
+}

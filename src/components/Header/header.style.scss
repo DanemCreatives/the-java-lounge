@@ -1,0 +1,85 @@
+.c-header {
+  @apply px-3 py-6 sm:p-6 md:p-12 fixed inset-x-0 z-20 transition-all duration-500;
+  animation: swipeDown 1s ease-in-out;
+
+  &__inner {
+    @apply flex justify-center items-center;
+  }
+
+  &__icon {
+    @apply p-3 rounded-full cursor-pointer transition-all duration-500 mx-2;
+
+    svg {
+      @apply transition-all duration-500;
+    }
+
+    &:hover {
+      svg {
+        @apply transform scale-[0.85];
+      }
+    }
+
+    &--login {
+      @apply hidden sm:block;
+    }
+  }
+
+  &__mobile {
+    @apply w-6 xl:flex;
+
+    span {
+      @apply h-[0.15rem] block mb-[0.35rem] bg-white rounded;
+
+      &:last-child {
+        @apply mb-0;
+      }
+    }
+  }
+
+  &__center {
+    @apply flex-auto flex items-center justify-center;
+
+    a {
+      @apply transition duration-500;
+
+      &:hover {
+        @apply transform scale-110;
+      }
+    }
+  }
+
+  &__leftside {
+    @apply flex-1 pl-3 md:pl-0 md:pr-12 xl:block;
+
+    .c-main-menu {
+      @apply hidden xl:flex;
+    }
+  }
+
+  &__rightside {
+    @apply flex-1 flex justify-end items-center;
+
+    .o-custom-button {
+      @apply hidden xl:block mr-4;
+    }
+
+    .o-link-underline {
+      @apply hidden mx-10 xl:block;
+    }
+  }
+
+  &__leftside,
+  &__rightside {
+    @apply md:flex-[0_0_40%];
+  }
+
+  &--fill {
+    @apply bg-white py-4 md:py-6 bg-grayscaleMedium;
+
+    .c-header__icon {
+      &:hover {
+        @apply bg-grayscaleLight;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.c-mobile-menu {
+  @apply fixed inset-0 -right-1 z-20 bg-opacity-0 block xl:hidden bg-black pointer-events-none transition-all duration-500;
+
+  &__content {
+    @apply bg-black absolute inset-y-0 right-1/4 left-0 px-4 py-6 max-w-[300px] transition-all duration-500 -translate-x-full;
+  }
+
+  &__head {
+    @apply pb-6;
+  }
+
+  &__personal {
+    @apply pt-6;
+  }
+
+  .c-main-menu {
+    @apply block pb-6;
+  }
+
+  .o-link-underline {
+    @apply block py-4 before:hidden after:hidden;
+  }
+
+  &.active {
+    @apply bg-opacity-75 pointer-events-auto;
+
+    .c-mobile-menu__content {
+      @apply translate-x-0;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.c-accordion {
+  @apply rounded-none border-0 p-4 sm:p-8 md:pb-24;
+
+  &__title {
+    @apply bg-transparent text-center uppercase font-secondary text-white font-extralight text-2xl sm:text-3xl xl:text-4xl py-10 sm:pt-12 sm:pb-10 px-12;
+
+    &:after {
+      @apply content-[''] absolute right-2 xl:right-4 w-8 sm:w-10 xl:w-12 h-8 sm:h-10 xl:h-12 top-12 xl:top-10 bg-contain bg-no-repeat bg-center -translate-y-2 sm:-translate-y-3;
+      @apply bg-[url('/src/assets/images/svgs/chevron-down.svg')] transform transition duration-300 rotate-90;
+    }
+
+    &:before {
+      @apply content-[''] absolute left-2 xl:left-4 w-8 sm:w-10 xl:w-12 h-8 sm:h-10 xl:h-12 top-10 bg-contain bg-no-repeat bg-center transition duration-1000 transform sm:translate-y-1;
+    }
+
+    $icons: "filter", "jug", "machine", "press";
+
+    @each $name in $icons {
+      &--#{$name} {
+        &:before {
+          background-image: url("../../assets/images/icon-#{$name}.png");
+        }
+      }
+    }
+  }
+
+  &__panel {
+    @apply hidden;
+  }
+
+  &__textbox {
+    @apply px-2 sm:p-4 pb-8;
+  }
+
+  &__segment {
+    @apply rounded-none border-b border-grayscaleExtraLight relative text-sm cursor-pointer;
+    animation: swipeUpFade 1s backwards;
+
+    &:after {
+      @apply content-[''] border-t absolute inset-x-0 -bottom-1 border-grayscaleExtraLight;
+    }
+
+    &:last-child {
+      @apply border-b-0;
+      &:after {
+        @apply hidden;
+      }
+    }
+
+    &:first-child,
+    &:last-child {
+      .title {
+        @apply rounded-none;
+      }
+    }
+
+    &:hover {
+      .c-accordion__title:before {
+        @apply scale-125;
+      }
+    }
+
+    &.active {
+      .c-accordion__panel {
+        @apply block;
+      }
+      .c-accordion__title:after {
+        @apply -rotate-90;
+      }
+
+      .c-accordion__textbox {
+        animation-name: customFadeIn;
+        animation-duration: 2s;
+      }
+    }
+  }
+}

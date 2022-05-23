@@ -1,0 +1,66 @@
+.c-footer {
+  @apply bg-grayscaleMedium overflow-hidden;
+
+  &__menu {
+    @apply pb-10 sm:pb-0 text-center sm:text-left flex flex-col;
+
+    &--main {
+      @apply sm:pl-16 md:pl-20 lg:pl-8 xl:pl-10;
+    }
+  }
+
+  &__menu-header {
+    @apply uppercase text-sm pb-2 sm:pb-6 text-primary;
+  }
+
+  &__canvas {
+    @apply h-[50vh] min-h-[450px] bg-[url('/src/assets/images/hot-coffee.jpg')] bg-cover bg-bottom opacity-60;
+  }
+
+  &__resources {
+    @apply py-16 sm:py-20 px-6 sm:px-12 border-t-4 border-primary z-10 relative bg-grayscaleMedium;
+  }
+
+  &__company {
+    @apply pt-6 sm:pt-0 sm:pb-0;
+  }
+
+  &__logo {
+    @apply hidden sm:block pb-4;
+    svg {
+      @apply mx-auto sm:ml-0;
+    }
+  }
+
+  &__social {
+    @apply flex justify-between sm:max-w-[250px];
+  }
+
+  &__link {
+    @apply px-2 sm:pl-0 sm:pr-4 py-4;
+  }
+
+  &__paragraph {
+    @apply text-xs pb-4 sm:pb-8;
+  }
+
+  &__newsletter {
+    @apply text-center sm:text-left xl:pl-14;
+  }
+
+  &__copyright {
+    @apply text-xs text-center pt-10 mt-4 sm:mt-10 border-t-grayscaleLight border-t text-[#858585];
+  }
+
+  .c-main-menu {
+    @apply flex flex-col;
+
+    &__item {
+      @apply py-1;
+
+      a {
+        @apply capitalize text-xs;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.o-input-fieldset {
+  &__label {
+    @apply pb-1 block;
+  }
+  .o-custom-input {
+    @apply w-full;
+  }
+
+  &--primary {
+    .o-input-fieldset__label {
+      @apply text-sm;
+    }
+  }
+
+  &--secondary {
+    .o-input-fieldset__label {
+      @apply pb-2;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.c-featured-banner {
+  @apply h-[40vh] sm:h-[50vh] sm:min-h-[400px] overflow-hidden relative;
+
+  &__textbox {
+    @apply relative flex items-center justify-center h-full;
+    animation: swipeUpFade 1s;
+  }
+
+  &__parallax {
+    @apply absolute inset-0;
+  }
+
+  .c-whole-image {
+    @apply absolute inset-0 -bottom-2/4 sm:-bottom-1/4 bg-black transform -translate-y-32 sm:-translate-y-24;
+
+    img {
+      @apply w-full h-full opacity-70 object-cover object-center;
+      animation: customFadeInSubtle 1s;
+    }
+  }
+
+  .container {
+    @apply h-full;
+  }
+
+  .o-header-drop-shadow {
+    @apply text-center;
+  }
+}

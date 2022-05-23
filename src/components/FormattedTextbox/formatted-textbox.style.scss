@@ -1,0 +1,8 @@
+.c-formatted-textbox {
+  @apply py-14 md:pt-32 px-4;
+
+  &__textbox {
+    @apply py-20 md:pt-32 max-w-3xl mx-auto px-4;
+    animation: customFadeIn 1s backwards 0.3s;
+  }
+}

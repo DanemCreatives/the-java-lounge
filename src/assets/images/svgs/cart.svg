@@ -1,0 +1,18 @@
+<svg class="svg-icon icon-cart2 " xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22">
+	<g>
+		<g>
+			<g>
+				<path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M17.5 19a1.5 1.5 0 1 0 3.001-.001A1.5 1.5 0 0 0 17.5 19z"></path>
+			</g>
+			<g>
+				<path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" d="M6.5 19a1.5 1.5 0 1 0 3.001-.001A1.5 1.5 0 0 0 6.5 19z"></path>
+			</g>
+			<g>
+				<path fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="20" d="M.5.5v0H4v0l4 17v0h11v0"></path>
+			</g>
+			<g>
+				<path fill="none" stroke="#fff" stroke-linecap="square" stroke-miterlimit="20" d="M7.527 15.5v0h12.971v0l3-9v0H5.41v0"></path>
+			</g>
+		</g>
+	</g>
+</svg>

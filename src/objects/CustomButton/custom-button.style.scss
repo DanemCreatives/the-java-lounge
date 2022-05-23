@@ -1,0 +1,83 @@
+.o-custom-button {
+  @apply text-sm border  min-w-[150px] text-center block relative transition-all duration-500;
+
+  &:before,
+  &:after {
+    @apply content-[''] absolute inset-1 bg-primary transition-all duration-500;
+  }
+
+  span {
+    @apply m-1 py-2 px-4 block uppercase z-10 relative transition-all duration-500 bg-transparent;
+
+    &:before,
+    &:after {
+      @apply content-[''] absolute  transition-all duration-500 -z-10;
+    }
+
+    &:before {
+      @apply inset-y-0 inset-x-1/2 border-y;
+    }
+
+    &:after {
+      @apply inset-x-0 inset-y-1/2 border-x;
+    }
+  }
+
+  &--primary {
+    @apply border-primary;
+
+    &:before,
+    &:after {
+      @apply bg-primary;
+    }
+
+    span {
+      &:before,
+      &:after {
+        @apply border-primaryLight;
+      }
+    }
+  }
+
+  &--secondary {
+    @apply border-grayscaleExtraLight;
+
+    &:before,
+    &:after {
+      @apply bg-grayscaleExtraLight;
+    }
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      @apply inset-1/2 delay-[0ms] opacity-0;
+    }
+
+    span {
+      @apply tracking-widest;
+
+      &:before {
+        @apply inset-x-0;
+      }
+
+      &:after {
+        @apply inset-y-0;
+      }
+    }
+
+    &.o-custom-button--primary {
+      @apply border-primaryLight;
+    }
+    &.o-custom-button--secondary {
+      @apply border-[#A6A6A6];
+
+      span {
+        &:before,
+        &:after {
+          @apply border-[#A6A6A6];
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.c-featured-products {
+  @apply px-5 my-10 md:my-20 xl:my-20 lg:px-10;
+
+  .col {
+    &:nth-child(even) {
+      .animate__animated {
+        animation-delay: 150ms;
+      }
+    }
+  }
+}

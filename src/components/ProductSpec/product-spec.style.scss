@@ -1,0 +1,77 @@
+.c-product-spec {
+  @apply px-4 sm:px-10 py-4 sm:py-10 lg:py-20;
+
+  &__canvas {
+    @apply bg-gradient-to-t from-black to-grayscaleMediumLighter py-8 h-full flex items-center max-h-[400px] lg:max-h-[700px] sticky top-28;
+  }
+
+  &__image {
+    @apply h-full w-auto sm:h-auto mx-auto max-h-full;
+    animation: customFadeIn 1s;
+  }
+
+  &__header {
+    @apply text-3xl font-secondary font-bold pt-1 pb-4 uppercase;
+
+    span {
+      @apply font-light italic;
+    }
+  }
+
+  &__details {
+    @apply py-4 w-full;
+    animation: customFadeIn 1s;
+  }
+
+  &__price {
+    @apply pt-4 pb-4 text-3xl text-primary relative;
+
+    &::before {
+      @apply top-0;
+    }
+
+    &::after {
+      @apply bottom-0;
+    }
+    &::before,
+    &::after {
+      @apply content-[''] absolute border-t-2 border-dotted h-0 inset-x-0 border-primary;
+    }
+  }
+
+  &__textbox {
+    @apply py-6;
+  }
+
+  &__alterer {
+    @apply pt-4 flex;
+
+    .o-input-fieldset {
+      @apply w-full;
+    }
+  }
+
+  &__applier {
+    @apply flex items-end pt-4;
+
+    .o-input-fieldset {
+      @apply basis-1/2 sm:basis-2/6 mr-2;
+    }
+
+    .o-custom-button {
+      @apply basis-1/2 sm:basis-auto;
+    }
+  }
+
+  &__ctas {
+    @apply pt-6 flex justify-end;
+  }
+
+  &__col-left {
+    @apply lg:pr-8 relative;
+  }
+
+  &__col-right {
+    @apply pt-4 lg:pt-0 lg:pl-8 flex items-center;
+  }
+}

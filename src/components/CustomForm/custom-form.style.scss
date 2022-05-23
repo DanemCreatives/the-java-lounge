@@ -1,0 +1,42 @@
+.c-custom-form {
+  @apply px-4 sm:px-10 py-14 sm:py-20 min-h-[calc(100vh-6em)] flex items-center;
+
+  &__fieldset {
+    @apply max-w-2xl mx-auto pt-16 sm:pt-20;
+  }
+
+  &__ctas {
+    @apply flex flex-col items-center text-xs pt-9;
+    animation: customFadeIn 1s backwards 0.9s;
+  }
+
+  &__link {
+    @apply text-[#888] transition duration-500;
+    &:hover {
+      @apply text-primary;
+    }
+    &:first-child {
+      @apply pb-2;
+    }
+  }
+
+  .o-header-dotted-lines {
+    @apply max-w-2xl mx-auto;
+  }
+
+  .o-input-fieldset {
+    @apply pb-10;
+    animation: swipeUpFade 1s backwards;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+
+  .o-custom-button {
+    @apply mx-auto;
+    animation: customFadeIn 1s backwards 0.7s;
+  }
+}

@@ -1,0 +1,11 @@
+.o-subscribe-fieldset {
+  @apply flex;
+
+  .o-custom-input {
+    @apply text-xs sm:text-sm mr-1 w-full;
+  }
+
+  .o-custom-button {
+    @apply min-w-fit xl:min-w-[150px];
+  }
+}

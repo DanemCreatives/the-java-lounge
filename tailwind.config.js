@@ -1,0 +1,46 @@
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  safelist: [
+    "col-span-2",
+    "col-span-3",
+    "col-span-4",
+    "col-span-5",
+    "col-span-6",
+    "col-span-7",
+    "grid-cols-12",
+    "gap-6",
+    "sm:col-span-3",
+    "sm:col-span-4",
+    "sm:col-span-5",
+    "sm:col-span-12",
+    "col-span-12",
+    "lg:col-span-2",
+    "lg:col-span-3",
+    "lg:col-span-4",
+    "lg:col-span-6",
+    "xl:col-span-3",
+    "md:col-span-6",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#b29257",
+        primaryLight: "#C1A778",
+        grayscaleExtraLight: "#4d4d4d",
+        grayscaleLight: "#1e1e1e",
+        grayscaleMediumLighter: "#121212",
+        grayscaleMedium: "#0c0c0c",
+      },
+      fontFamily: {
+        secondary: ["Spectral"],
+      },
+      screens: {
+        xl: "1280px",
+        smMax: { max: "767px" },
+        mdMax: { max: "1023px" },
+        lgMax: { max: "1279px" },
+      },
+    },
+  },
+  plugins: [],
+};
