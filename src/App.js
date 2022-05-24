@@ -45,20 +45,17 @@ const App = () => {
       <ParallaxProvider>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/brew-guide" element={<BrewGuide />} />
-          <Route path="/shop" element={<ProductListing />} />
-          <Route path="/shop/:id" element={<SingleProduct />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/forgot-password" element={<ForgotPassword />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route
-            path="/terms-and-conditions"
-            element={<TermsAndConditions />}
-          />
-          <Route path="/faqs" element={<FAQs />} />
+          <Route path="about" element={<About />} />
+          <Route path="brew-guide" element={<BrewGuide />} />
+          <Route path="shop" element={<ProductListing />} />
+          <Route path="shop/:id" element={<SingleProduct />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="login" element={<Login />} />
+          <Route path="forgot-password" element={<ForgotPassword />} />
+          <Route path="register" element={<Register />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="faqs" element={<FAQs />} />
         </Routes>
       </ParallaxProvider>
       <Footer showImage={location.pathname === "/" ? true : false} />
