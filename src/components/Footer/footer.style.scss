@@ -14,7 +14,7 @@
   }
 
   &__canvas {
-    @apply h-[50vh] min-h-[450px] bg-[url('/src/assets/images/hot-coffee.jpg')] bg-cover bg-bottom opacity-60;
+    @apply h-[50vh] min-h-[450px] bg-[url('/src/assets/images/hot-coffee.jpg')] bg-cover bg-right-bottom opacity-60;
   }
 
   &__resources {
