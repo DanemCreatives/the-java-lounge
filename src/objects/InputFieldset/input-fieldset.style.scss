@@ -1,6 +1,6 @@
 .o-input-fieldset {
   &__label {
-    @apply pb-1 block;
+    @apply pb-1 block font-semibold;
   }
   .o-custom-input {
     @apply w-full;

@@ -1,0 +1,13 @@
+.o-google-button {
+  animation: customFadeIn 1s backwards 250ms;
+  font-family: "Roboto", sans-serif;
+  @apply font-extrabold flex items-center justify-center w-full bg-white rounded-md cursor-pointer border-b-2 border-[#a8a8a8];
+
+  svg {
+    @apply w-[3rem] mx-2;
+  }
+
+  span {
+    @apply text-[#757575] pr-4;
+  }
+}

@@ -1,24 +1,26 @@
 import "animate.css/animate.min.css";
 import "./utilities/page.style.scss";
 import "./utilities/animations.style.scss";
-import { useState, useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
-import { ParallaxProvider } from "react-scroll-parallax";
-import Header from "./components/Header/header.component";
-import Footer from "./components/Footer/footer.component";
-import HomePage from "./pages/HomePage/home-page.page";
+
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 import About from "./pages/About/about.page";
 import BrewGuide from "./pages/BrewGuide/brew-guide.page";
-import ProductListing from "./pages/ProductListing/product-listing.page";
-import SingleProduct from "./pages/SingleProduct/single-product.page";
 import Contact from "./pages/Contact/contact.page";
-import Login from "./pages/Login/login.page";
-import ForgotPassword from "./pages/ForgotPassword/forgot-password.page";
-import Register from "./pages/Register/register.page";
-import PrivacyPolicy from "./pages/PrivacyPolicy/privacy-policy.page";
-import TermsAndConditions from "./pages/TermsAndConditions/terms-and-conditions.page";
 import FAQs from "./pages/Faqs/faqs.page";
+import Footer from "./components/Footer/footer.component";
+import ForgotPassword from "./pages/ForgotPassword/forgot-password.page";
+import Header from "./components/Header/header.component";
+import HomePage from "./pages/HomePage/home-page.page";
+import Login from "./pages/Login/login.page";
 import MobileMenu from "./components/MobileMenu/mobile-menu.component";
+import { ParallaxProvider } from "react-scroll-parallax";
+import PrivacyPolicy from "./pages/PrivacyPolicy/privacy-policy.page";
+import ProductListing from "./pages/ProductListing/product-listing.page";
+import Register from "./pages/Register/register.page";
+import SingleProduct from "./pages/SingleProduct/single-product.page";
+import TermsAndConditions from "./pages/TermsAndConditions/terms-and-conditions.page";
 
 const App = () => {
   const [offset, setOffset] = useState("transparent");
